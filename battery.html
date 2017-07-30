@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated|icons</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		#bef{
+			font-size: 200px;
+			padding-top: 50%;
+		}
+	</style>
+</head>
+<body>
+<div class="col-md-5"></div>
+<div class="col-md-2">
+<center>
+<div id="bef" class="fa"></div>
+</center>
+</div>
+<div class="col-md-5"></div>
+
+<script>
+	function charge() {
+		let bat = document.getElementById('bef');
+		bat.innerHTML = "&#xf244;";
+		setTimeout(function(){
+			bat.innerHTML = "&#xf243;";
+		}, 1000);
+		setTimeout(function(){
+			bat.innerHTML = "&#xf242;";
+		}, 2000);
+		setTimeout(function(){
+			bat.innerHTML = "&#xf241;";
+		}, 3000);
+		setTimeout(function(){
+			bat.innerHTML = "&#xf240;";
+		}, 4000);
+	}
+	charge();
+	setInterval(charge, 5000);
+</script>
+</body>
+</html>
